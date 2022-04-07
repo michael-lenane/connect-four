@@ -1,0 +1,38 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Connect Four</h1>
+  <h3>Rules</h3>
+  <p>Only one piece can be played at a time <br>
+  Players alternate turns placing their pieces <br>
+  The game ends when there is a four-in-a-row or no spots left to place a piece
+  </p>
+  <h3>How to Play</h3>
+  <p>
+    Grab your piece by clicking and holding it <br>
+    Drag your piece to the top of the column you would like to place it, and release. <br>
+    After you place your piece, it is your opponent's turn to place their piece
+  </p>
+
+  <p>Player Turn:</p>
+
+  <div class="player-container">
+    <div id="player1" draggable="true" class="active" ></div>
+    <div id="player2" draggable="true"></div>
+  </div>
+
+<div id="game">
+  <table id="board"></table>
+  
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>

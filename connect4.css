@@ -1,0 +1,140 @@
+/* title */
+h1 {
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 3.5rem;
+  text-shadow: 0px 2px 2px #ffd20a;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+/* container for all table rows */
+#board {
+  margin: auto;
+  background-color: #ffd20a;
+  border-radius: 5%;
+  padding: 10px;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* all individual playing cells */
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+
+/*  top row of game board when hovering */
+#column-top td:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+.piece {
+  /* TODO: make into circles */
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  animation-name: dropPiece;
+  animation-duration: .75s;
+  margin-left: 0.5px;
+}
+/* animate pieces dripping into the game board */
+@keyframes dropPiece {
+  from {
+  margin-top: -300px;
+  }
+  to {
+  margin-bottom: 0px;
+  }
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.piece.player1 {
+  background-color: red;
+  border: 1px solid grey;
+}
+
+.piece.player2 {
+  background-color: blue;
+  border: 1px solid grey;
+}
+
+
+
+button {
+  margin: auto;
+  background-color: #ffd20a;
+  margin-top: 15px;
+  border: none;
+  color: black;
+  padding : 5px;
+  height: 30px;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+td {
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+/* draggable elements */
+
+.player-container {
+  display: flex;
+  width: 200px;
+  height: 55px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#player1.active {
+  margin: auto;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+#player2.active {
+  margin: auto;
+  border-radius: 50%;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+}
+
+/* titles and rules */
+h3 {
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+p{
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 50;
+  margin-top: 0px;
+}
+
+
+
+
+
+
